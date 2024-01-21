@@ -1,0 +1,16 @@
+numpy
+# netCDF4
+# pytest
+# typing-extensions
+scipy
+matplotlib
+scikit-image
+pydot
+graphviz
+pydot_ng
+keras_tuner
+scikit-learn
+librosa
+# PyWavelets
+# scaleogram
+# line_profiler
