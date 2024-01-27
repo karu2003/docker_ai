@@ -11,6 +11,9 @@ pydot_ng
 keras_tuner
 scikit-learn
 librosa
+pandas
+jupyter
+ipykernel
 # PyWavelets
 # scaleogram
 # line_profiler
