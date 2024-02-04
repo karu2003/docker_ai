@@ -1,8 +1,8 @@
-numpy
+#numpy
 # netCDF4
 # pytest
 # typing-extensions
-scipy
+#scipy
 matplotlib
 scikit-image
 pydot
@@ -14,6 +14,11 @@ librosa
 pandas
 jupyter
 ipykernel
+sktime
+tslearn
+#[all_extras]
+pyqt5
+pyqtgraph
 # PyWavelets
 # scaleogram
 # line_profiler

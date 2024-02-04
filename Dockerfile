@@ -20,7 +20,8 @@ RUN groupadd ${USER_NAME} --gid ${USER_GID}\
 
 RUN apt update \
    && apt -y install --no-install-recommends \
-   git python3-tk iproute2 sudo x11-apps graphviz
+   git python3-tk iproute2 sudo x11-apps graphviz libgl1-mesa-glx 
+   # python3-pyqt5 python3-pyqt5.sip python3-pyqtgraph
 #     libfftw3-3 libhdf5-dev libnetcdf-dev libfftw3-dev \
 #     # python3-numpy
 
@@ -29,6 +30,9 @@ RUN pip install --upgrade pip
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt && \
    rm /tmp/requirements.txt
+
+RUN apt update \
+   && apt -y install python3-pyqt5
 
 # ENV USER=${USER_NAME}
 
